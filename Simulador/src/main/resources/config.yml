@@ -7,28 +7,28 @@ queues:
   Q1:
     servers: 1
     capacity: 5
-    minArrival: 2.0  # Tempo mínimo de chegada
-    maxArrival: 4.0  # Tempo máximo de chegada
-    minService: 1.0  # Tempo mínimo de serviço
-    maxService: 2.0  # Tempo máximo de serviço
+    minArrival: 2.0
+    maxArrival: 4.0
+    minService: 1.0
+    maxService: 2.0
   Q2:
     servers: 2
     capacity: 5
-    minService: 4.0  # Tempo mínimo de serviço
-    maxService: 8.0  # Tempo máximo de serviço
+    minService: 4.0
+    maxService: 8.0
   Q3:
     servers: 2
     capacity: 10
-    minService: 5.0  # Tempo mínimo de serviço
-    maxService: 15.0  # Tempo máximo de serviço
+    minService: 5.0
+    maxService: 15.0
 
 network:
   - source: Q1
     target: Q2
-    probability: 0.80  # Probabilidade de ir de Q1 para Q2
+    probability: 0.80
   - source: Q1
     target: Q3
-    probability: 0.20  # Probabilidade de ir de Q1 para Q3
+    probability: 0.20
 
 rndnumbers:
   - 0.2176
@@ -48,7 +48,7 @@ rndnumbers:
   - 0.5011
   - 0.2931
 
-rndnumbersPerSeed: 100000  # Número de aleatórios gerados por semente
+rndnumbersPerSeed: 100000
 seeds:
   - 1
   - 2

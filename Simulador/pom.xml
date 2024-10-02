@@ -13,17 +13,15 @@
   </properties>
 
   <dependencies>
-    <!-- Adicionando a dependência do SnakeYAML -->
     <dependency>
       <groupId>org.yaml</groupId>
       <artifactId>snakeyaml</artifactId>
-      <version>1.29</version> <!-- Verifique a versão mais recente, se necessário -->
+      <version>1.29</version>
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
-      <!-- Plugin para compilar o código-fonte -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -33,8 +31,6 @@
           <target>17</target>
         </configuration>
       </plugin>
-
-      <!-- Plugin para criar o arquivo JAR executável e definir a classe principal -->
     </plugins>
   </build>
 </project>
